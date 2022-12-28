@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <div class="control-buttons">
+        <button>Start Game</button>
+    </div>
+
+    <div class="info-container">
+        <div class="name">
+            Hello: <span></span>
+        </div>
+        <div class="tries">
+            Wrong Tries: <span>0</span>
+        </div>
+    </div>
+    <div class="game-container">
+        <div class="game-block" data-icon="house">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-house"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="house">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-house"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="plane">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-plane"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="plane">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-plane"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="star">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="star">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="mug-hot">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-mug-hot"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="mug-hot">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-mug-hot"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="car">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-car"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="car">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-car"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="bell">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="bell">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="camera">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="camera">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="umbrella">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-umbrella"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="umbrella">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-umbrella"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="ship">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-ship"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="ship">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-ship"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="pen-ruler">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="pen-ruler">
+            <div class="face front">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="face back">
+                <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

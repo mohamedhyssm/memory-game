@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.control-buttons {
+    // position
+    position: fixed;
+    top: 0;
+    left: 0;
+    // dimentions
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+
+    background-color: rgba(3, 169, 244, 0.9);
+
+    button {
+        // position
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        // color
+        background-color: #f44336;
+        color: #fff;
+        // border and padding
+        border-radius: 10px;
+        border: none;
+        padding: 15px 25px;
+        // text
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.info-container {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    background-color: #f6f6f6;
+    padding: 20px;
+    font-size: 24px;
+
+    border: 2px solid #2196f3;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    gap: 30px;
+
+    .game-block {
+        height: 150px;
+        // decoration 
+        cursor: pointer;
+        position: relative;
+        // transform
+        transition: transform .5s;
+        transform-style: preserve-3d;
+
+        .face {
+            // position
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            // flex
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // backface and border
+            border: 5px solid #2196f3;
+            backface-visibility: hidden;
+
+            &.front {
+                background-color: #333;
+            }
+
+            &.back {
+                background-color: #4b8fc5;
+                transform: rotateY(180deg);
+            }
+
+            i {
+                color: white;
+                font-size: 70px;
+            }
+        }
+
+        &.flipped,
+        &.has-match {
+            transform: rotateY(180deg);
+            pointer-events: none;
+        }
+    }
+
+    &.no-clicking {
+        pointer-events: none;
+    }
+}
