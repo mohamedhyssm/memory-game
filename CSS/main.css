@@ -92,7 +92,7 @@ body {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
-.game-container .game-block .face i {
+.game-container .game-block .face svg {
   color: white;
   font-size: 70px;
 }
